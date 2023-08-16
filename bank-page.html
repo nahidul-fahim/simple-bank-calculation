@@ -15,25 +15,25 @@
 
     <main class="container p-8 mx-auto mt-[-30px]">
         <section class="bg-[#b8fff9] rounded-md py-[80px]">
-            <div class="grid grid-cols-6 gap-8 w-[80%] mx-auto justify-items-stretch">
+            <div class="grid grid-cols-1 md:grid-cols-6 gap-5 md:gap-4 lg:gap-8 w-[80%] mx-auto justify-items-stretch">
 
                 <!-- DEPOSIT AMOUNT -->
 
-                <div class="col-span-2 bg-[#4882ff] rounded-md p-5">
+                <div class="md:col-span-2 bg-[#4882ff] rounded-md p-5">
                     <h3 class="text-white text-[1.4rem] font-semibold">Deposit</h3>
                     <h2 class="text-white text-[2rem] font-bold">$<span id="deposit-amount">0.00</span></h2>
                 </div>
 
                 <!-- WITHDRAW AMOUNT -->
 
-                <div class="col-span-2 bg-[#23bdec] rounded-md p-5">
+                <div class="md:col-span-2 bg-[#23bdec] rounded-md p-5">
                     <h3 class="text-white text-[1.4rem] font-semibold">Withdraw</h3>
                     <h2 class="text-white text-[2rem] font-bold">$<span id="withdraw-amount">0.00</h2>
                 </div>
 
                 <!-- TOTAL BALANCE -->
 
-                <div class="col-span-2 bg-[#ec22a9] rounded-md p-5">
+                <div class="md:col-span-2 bg-[#ec22a9] rounded-md p-5">
                     <h3 class="text-white text-[1.4rem] font-semibold">Balance</h3>
                     <h2 class="text-white text-[2rem] font-bold">$<span id="total-amount">0.00</h2>
                 </div>
@@ -41,17 +41,17 @@
                 
                 <!-- DO THE DEPOSIT HERE -->
 
-                <div class="col-span-3 bg-[#26a39d] rounded-md p-5 flex flex-col space-y-5">
+                <div class="md:col-span-3 bg-[#26a39d] rounded-md p-5 flex flex-col space-y-5">
                     <h3 class="text-white text-[1.4rem] font-semibold">Deposit amount</h3>
-                    <input type="number" id="deposit-enter" class="py-2 px-4 rounded w-[75%] focus:outline-0 border-[1px] border-[#aa848400] focus:border-[1px] focus:border-[#adadad] ml-[40px]" name="" placeholder="$ please enter your deposit amount">
+                    <input type="number" id="deposit-enter" class="py-2 px-4 rounded md:w-[75%] focus:outline-0 border-[1px] border-[#aa848400] focus:border-[1px] focus:border-[#adadad] ml-[15px] md:ml-[40px]" name="" placeholder="$ enter deposit amount">
                     <button type="submit" id="deposit-btn" class="bg-[#ffffff] text-[#179a9e] text-[16px] w-fit font-semibold rounded-[4px] px-4 py-1 hover:bg-[#777777] hover:text-white transition-[all] hover:text-[16px] duration-500 ml-[40px]">Deposit</button>
                 </div>
 
                 <!-- DO THE WITHDRAW HERE -->
 
-                <div class="col-span-3 bg-[#7940ff] rounded-md p-5 flex flex-col space-y-5">
+                <div class="md:col-span-3 bg-[#7940ff] rounded-md p-5 flex flex-col space-y-5">
                     <h3 class="text-white text-[1.4rem] font-semibold">Withdraw amount</h3>
-                    <input type="number" id="withdraw-enter" class="py-2 px-4 rounded w-[75%] focus:outline-0 border-[1px] border-[#aa848400] focus:border-[1px] focus:border-[#adadad] ml-[40px]" name="" placeholder="$ please enter your deposit amount">
+                    <input type="number" id="withdraw-enter" class="py-2 px-4 rounded md:w-[75%] focus:outline-0 border-[1px] border-[#aa848400] focus:border-[1px] focus:border-[#adadad] ml-[15px] md:ml-[40px]" name="" placeholder="$ enter withdraw amount">
                     <button type="submit" id="withdraw-btn" class="bg-[#ffffff] text-[#7940ff] text-[16px] w-fit font-semibold rounded-[4px] px-4 py-1 hover:bg-[#777777] hover:text-white transition-[all] hover:text-[16px] duration-500 ml-[40px]">Withdraw</button>
                 </div>
 
